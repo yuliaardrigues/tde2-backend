@@ -28,6 +28,6 @@ class Client{
 
 $cliente = new Client();
 $cliente->setIdClient('44335453');
-echo $p->getIdClient();
+echo $cliente->getIdClient();
 
 ?>
