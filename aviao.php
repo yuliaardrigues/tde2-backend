@@ -50,16 +50,5 @@ class Aviao{
         $this->fabricante = $fabricante;
     }
 }
-$aviao = new Aviao;
-
-$aviao->setIdAviao(uniqid());
-$aviao->setModelo("xr 30");
-$aviao->setCapacidade(20);
-$aviao->setFabricante('fabricante');
-
-echo $aviao->getIdAviao();
-echo $aviao->getCapacidade();
-echo $aviao->getModelo();
-echo $aviao->getFabricante();
 
 ?>

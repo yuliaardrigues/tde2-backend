@@ -1,17 +1,20 @@
 <?php
 
+require('aviao.php');
+
 class Voo{
-    public $idVoo;
-    public $codigo;
-    public $horarioPartida;
-    public $horarioChegada;
+    private $idVoo;
+    private $codigo;
+    private $horarioPartida;
+    private $horarioChegada;
+    private Aviao $aviao;
 
     public function getIdVoo(){
         return $this->idVoo;
     }
 
-    public function setIdVoo(){
-        $this->idVoo = uniqid();
+    public function setIdVoo($idVoo){
+        $this->idVoo = $idVoo;
     }
 
     public function getCodigo(){
@@ -37,10 +40,15 @@ class Voo{
     public function setHorarioChegada($horarioChegada){
         $this->horarioChegada = $horarioChegada;
     }
-}
 
-$voo1 = new Voo;
-$voo1->setIdVoo();
-$voo1->setCodigo('0001');
-$voo1->setHorarioPartida('18:30');
-$voo1->setHorarioChegada('22:00');
+    public function getAviao()
+    {
+        return $this->aviao;
+    }
+
+
+    public function setAviao($aviao)
+    {
+        $this->aviao = $aviao;
+    }
+}
