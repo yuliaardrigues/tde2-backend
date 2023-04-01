@@ -8,13 +8,16 @@ class Voo{
     private $horarioPartida;
     private $horarioChegada;
     private Aviao $aviao;
+    private Reserva $reserva;
 
+    
     public function getIdVoo(){
         return $this->idVoo;
     }
 
     public function setIdVoo($idVoo){
         $this->idVoo = $idVoo;
+
     }
 
     public function getCodigo(){
@@ -50,5 +53,15 @@ class Voo{
     public function setAviao($aviao)
     {
         $this->aviao = $aviao;
+    }
+
+    public function getReserva()
+    {
+        return $this->reserva;
+    }
+
+    public function setReserva($reserva)
+    {
+        $this->reserva = $reserva;
     }
 }

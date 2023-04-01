@@ -1,12 +1,12 @@
 <?php
 
-require('voo.php');
+require('passageiro.php');
 
 class Compra
 {
   private $idCliente;
   private $horario;
-  private Voo $voo;
+  private Passageiro $passageiro;
 
   public function getIdCliente()
   {
@@ -30,23 +30,25 @@ class Compra
     return $this;
   }
 
-  public function getVoo()
+  /**
+   * Get the value of passageiro
+   */ 
+  public function getPassageiro()
   {
-    return $this->voo;
+    return $this->passageiro;
   }
 
-  public function setVoo($voo)
+  /**
+   * Set the value of passageiro
+   *
+   * @return  self
+   */ 
+  public function setPassageiro($passageiro)
   {
-    $this->voo = $voo;
+    $this->passageiro = $passageiro;
+
+    return $this;
   }
 }
 
-// $horario = "19:20";
-// $uuid = uniqid();
-
-// $compra = new Compra();
-// $compra->setIdCliente($uuid);
-// $compra->setHorario($horario);
-
-// echo "Número de identificação da compra: " . $compra->getIdCliente() . "\n";
-// echo "Horário  do voo: " . $compra->getHorario();
+?>
