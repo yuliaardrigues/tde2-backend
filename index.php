@@ -1,6 +1,6 @@
 <?php
 
-include('voo.php');
+include('compra.php');
 
 $aviao = new Aviao;
 
@@ -20,5 +20,20 @@ $voo1->setHorarioChegada('22:00');
 $voo1->setAviao($aviao);
 
 var_dump($voo1);
+
+
+
+
+$compra = new Compra();
+$compra->setIdCliente(uniqid());
+$compra->setHorario("19:20");
+$compra->setVoo($voo1);
+
+
+
+var_dump($compra);
+
+
+
 
 ?>
