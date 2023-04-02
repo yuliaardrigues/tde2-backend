@@ -26,28 +26,16 @@ class Compra
   public function setHorario($horario)
   {
     $this->horario = $horario;
-
-    return $this;
   }
 
-  /**
-   * Get the value of passageiro
-   */ 
   public function getPassageiro()
   {
     return $this->passageiro;
   }
 
-  /**
-   * Set the value of passageiro
-   *
-   * @return  self
-   */ 
   public function setPassageiro($passageiro)
   {
     $this->passageiro = $passageiro;
-
-    return $this;
   }
 }
 
