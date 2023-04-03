@@ -40,5 +40,4 @@ Class Reserva {
         $this->compra = $compra;
     }
 }
-
 ?>
